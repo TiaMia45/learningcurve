@@ -20,15 +20,44 @@ class MyTest < Test::Unit::TestCase
     assert_equal orientation, rover.orientation
     end
 
-  def test_rotate_right
+  def test_rotate_right_n
     rover = Rover.new
-    orientation = :n
-    rover.orientation = orientation
+    rover.orientation = :n
 
     rover.rotate_right
 
 
     assert_equal :e, rover.orientation
+    end
+
+  def test_rotate_right_e
+    rover = Rover.new
+    rover.orientation = :e
+
+    rover.rotate_right
+
+
+    assert_equal :s, rover.orientation
+  end
+
+  def test_rotate_right_s
+    rover = Rover.new
+    rover.orientation = :s
+
+    rover.rotate_right
+
+
+    assert_equal :w, rover.orientation
+  end
+
+  def test_rotate_right_w
+    rover = Rover.new
+    rover.orientation = :w
+
+    rover.rotate_right
+
+
+    assert_equal :n, rover.orientation
   end
 
 
