@@ -11,4 +11,14 @@ class MyTest < Test::Unit::TestCase
 
     assert_equal position, rover.position
   end
+
+  def test_orientation
+    rover = Rover.new
+    orientation = :n
+    rover.orientation = orientation
+
+    assert_equal orientation, rover.orientation
+  end
+
+
 end

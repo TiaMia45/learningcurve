@@ -1,5 +1,5 @@
 class Rover
 
-  attr_accessor :position
+  attr_accessor :position, :orientation
 
 end
