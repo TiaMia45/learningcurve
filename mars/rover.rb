@@ -10,5 +10,10 @@ class Rover
       @orientation = DIRECTIONS[(current_direction_index + 1) % DIRECTIONS.count]
   end
 
+  def rotate_left
+      current_direction_index = DIRECTIONS.index(@orientation)
+      @orientation = DIRECTIONS[(current_direction_index - 1) % DIRECTIONS.count]
+  end
+
 
 end

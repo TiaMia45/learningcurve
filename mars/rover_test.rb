@@ -4,61 +4,42 @@ require_relative 'rover'
 
 class MyTest < Test::Unit::TestCase
 
-  def test_position
-    rover = Rover.new
-    position = {x: 1, y: 2}
-    rover.position = position
+  def setup
+    @rover = Rover.new
+  end
 
-    assert_equal position, rover.position
+  def test_position
+    position = {x: 1, y: 2}
+    @rover.position = position
+
+    assert_equal position, @rover.position
   end
 
   def test_orientation
-    rover = Rover.new
     orientation = :n
-    rover.orientation = orientation
+    @rover.orientation = orientation
 
-    assert_equal orientation, rover.orientation
-    end
-
-  def test_rotate_right_n
-    rover = Rover.new
-    rover.orientation = :n
-
-    rover.rotate_right
-
-
-    assert_equal :e, rover.orientation
-    end
-
-  def test_rotate_right_e
-    rover = Rover.new
-    rover.orientation = :e
-
-    rover.rotate_right
-
-
-    assert_equal :s, rover.orientation
+    assert_equal orientation, @rover.orientation
   end
 
-  def test_rotate_right_s
-    rover = Rover.new
-    rover.orientation = :s
-
-    rover.rotate_right
-
-
-    assert_equal :w, rover.orientation
+  def test_rotate_right
+    assert_rotation(:rotate_right, :n, :e)
+    assert_rotation(:rotate_right, :e, :s)
+    assert_rotation(:rotate_right, :s, :w)
+    assert_rotation(:rotate_right, :w, :n)
   end
 
-  def test_rotate_right_w
-    rover = Rover.new
-    rover.orientation = :w
-
-    rover.rotate_right
-
-
-    assert_equal :n, rover.orientation
+  def test_rotate_left
+    assert_rotation(:rotate_left, :e, :n)
+    assert_rotation(:rotate_left, :s, :e)
+    assert_rotation(:rotate_left, :w, :s)
+    assert_rotation(:rotate_left, :n, :w)
   end
 
+  def assert_rotation(rotation, start, stop)
+    @rover.orientation = start
+    @rover.send(rotation)
+    assert_equal stop, @rover.orientation
+  end
 
 end
