@@ -2,16 +2,12 @@ class Rover
 
   attr_accessor :position, :orientation
 
+  DIRECTIONS = [:n, :e, :s, :w]
+
+
   def rotate_right
-    if @orientation == :n
-      @orientation = :e
-    elsif @orientation == :e
-      @orientation = :s
-    elsif @orientation == :s
-      @orientation = :w
-    elsif @orientation == :w
-      @orientation = :n
-    end
+      current_direction_index = DIRECTIONS.index(@orientation)
+      @orientation = DIRECTIONS[(current_direction_index + 1) % DIRECTIONS.count]
   end
 
 
