@@ -11,16 +11,27 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/koans@about_nil.coverage" NAME="about_nil Coverage Results" MODIFIED="1501726451865" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="koans" />
+    <SUITE FILE_PATH="coverage/koans@about_arrays.coverage" NAME="about_arrays Coverage Results" MODIFIED="1501791953917" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="koans" />
     <SUITE FILE_PATH="coverage/koans@path_to_enlightenment.coverage" NAME="path_to_enlightenment Coverage Results" MODIFIED="1501788964244" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="koans" />
     <SUITE FILE_PATH="coverage/koans@about_objects.coverage" NAME="about_objects Coverage Results" MODIFIED="1501788935688" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="koans" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="path_to_enlightenment.rb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="path_to_enlightenment.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/path_to_enlightenment.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="45">
               <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="about_arrays.rb" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/about_arrays.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="155">
+              <caret line="51" column="5" lean-forward="true" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -84,6 +95,7 @@
         <option value="$PROJECT_DIR$/about_asserts.rb" />
         <option value="$PROJECT_DIR$/about_nil.rb" />
         <option value="$PROJECT_DIR$/about_objects.rb" />
+        <option value="$PROJECT_DIR$/about_arrays.rb" />
       </list>
     </option>
   </component>
@@ -150,7 +162,25 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Ruby.path_to_enlightenment">
+  <component name="RunManager" selected="Ruby.about_arrays">
+    <configuration name="about_arrays" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
+      <module name="koans" />
+      <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/about_arrays.rb" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
+    </configuration>
     <configuration name="about_nil" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
       <module name="koans" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
@@ -205,16 +235,18 @@
       <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/path_to_enlightenment.rb" />
       <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
     </configuration>
-    <list size="3">
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Ruby.path_to_enlightenment" />
       <item index="1" class="java.lang.String" itemvalue="Ruby.about_nil" />
       <item index="2" class="java.lang.String" itemvalue="Ruby.about_objects" />
+      <item index="3" class="java.lang.String" itemvalue="Ruby.about_arrays" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Ruby.path_to_enlightenment" />
-        <item index="1" class="java.lang.String" itemvalue="Ruby.about_objects" />
-        <item index="2" class="java.lang.String" itemvalue="Ruby.about_nil" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="Ruby.about_arrays" />
+        <item index="1" class="java.lang.String" itemvalue="Ruby.path_to_enlightenment" />
+        <item index="2" class="java.lang.String" itemvalue="Ruby.about_objects" />
+        <item index="3" class="java.lang.String" itemvalue="Ruby.about_nil" />
       </list>
     </recent_temporary>
   </component>
@@ -230,12 +262,12 @@
       <option name="presentableId" value="Default" />
       <updated>1501724705248</updated>
       <workItem from="1501724706358" duration="1919000" />
-      <workItem from="1501726868576" duration="1617000" />
+      <workItem from="1501726868576" duration="5023000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3536000" />
+    <option name="totallyTimeSpent" value="6942000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="743" extended-state="0" />
@@ -246,7 +278,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3281493" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3281493" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -361,6 +393,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.path_progress">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/about_arrays.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="51" column="5" lean-forward="true" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
           <folding />
         </state>
       </provider>
