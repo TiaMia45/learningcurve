@@ -18,7 +18,7 @@ class AboutMethods < Neo::Koan
   # (NOTE: We are Using eval below because the example code is
   # considered to be syntactically invalid).
   def test_sometimes_missing_parentheses_are_ambiguous
-    eval "assert_equal 5, my_global_method 2, 3" # ENABLE CHECK
+    assert_equal 5, my_global_method(2, 3) # ENABLE CHECK
     #
     # Ruby doesn't know if you mean:
     #
@@ -33,10 +33,10 @@ class AboutMethods < Neo::Koan
   # NOTE: wrong number of arguments is not a SYNTAX error, but a
   # runtime error.
   def test_calling_global_methods_with_wrong_number_of_arguments
-    exception = assert_raise(___) do
-      my_global_method
+    exception = assert_raise(ArgumentError) do
+     my_global_method
     end
-    assert_match(/__/, exception.message)
+    assert_match(ArgumentError, exception.message)
 
     exception = assert_raise(___) do
       my_global_method(1,2,3)
